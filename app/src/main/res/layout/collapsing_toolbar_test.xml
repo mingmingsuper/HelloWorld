@@ -15,6 +15,8 @@
             android:layout_height="match_parent"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:contentScrim="?attr/colorPrimary"
+            app:scrimAnimationDuration="1"
+            app:expandedTitleGravity="start|top"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
