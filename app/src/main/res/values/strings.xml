@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="label_name">姓名：</string>
+    <string name="button_submit">提交</string>
+    <string name="hint_user_name">请输入用户名</string>
+    <string name="hint_user_password">请输入用户名</string>
+    <string name="button_close">关闭</string>
+</resources>

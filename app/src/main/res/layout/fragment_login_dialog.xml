@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorYellow"
+        android:gravity="center"
+        android:text="ANDROID APP"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/txt_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/hint_user_name"
+        android:textColorHint="@color/color_Tint_Color"/>
+
+    <EditText
+        android:id="@+id/txt_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/hint_user_password"
+        android:textColorHint="@color/color_Tint_Color"/>
+</LinearLayout>
