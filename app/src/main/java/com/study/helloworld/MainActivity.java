@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements LoginDialogFragme
 //        LoginDialogFragment loginDialog = new LoginDialogFragment();
 //        loginDialog.mListener = this;
 //        loginDialog.show(getFragmentManager(), "loginDialog");
-//        openDrawerLayout();
-        openCollapsingToolbarDemo();
+        openDrawerLayout();
+//        openCollapsingToolbarDemo();
     }
 
 
