@@ -13,6 +13,9 @@ import android.widget.Toast;
 import com.study.helloworld.fragment.EditNameDialogFragment;
 import com.study.helloworld.fragment.LoginDialogFragment;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity implements LoginDialogFragment.LoginInputListener {
 
     private static String TAG = "MainActivity";
@@ -31,6 +34,38 @@ public class MainActivity extends AppCompatActivity implements LoginDialogFragme
 //                Log.i(TAG,"我点击了一个button");
 //            }
 //        });
+
+//        Log.e("format date", formatTime(-788947200000l, "yyyy-MM-dd"));
+        Log.e("hide phone middle", hiddenMiddle("131615"));
+    }
+
+    public static String hiddenMiddle(String phone) {
+        if (phone != null && phone.length() > 6) {
+//            return phone.replaceAll("(\\w{3})\\w*(\\w{3})", "$1****$2");
+            int len = phone.length();
+            StringBuilder builder = new StringBuilder();
+            String start = phone.substring(0,3);
+            builder.append(start);
+            String end = phone.substring(len - 3, len);
+            for (int i = 0; i < len - 6; i++) {
+                builder.append("*");
+            }
+            builder.append(end);
+            return builder.toString();
+        }
+        return phone;
+    }
+
+    private static String formatTime(long time, String formatStr)
+    {
+//        if (time <=0)
+//        {
+//            return null;
+//        }
+
+        SimpleDateFormat format = new SimpleDateFormat(formatStr);
+
+        return format.format(new Date(time));
     }
 
     public void clickButton(View view) {
