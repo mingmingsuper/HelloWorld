@@ -23,6 +23,14 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
+
+        maven {
+            credentials {
+                username 'hh-public'
+                password 'OFGB5wX0'
+            }
+            url 'http://develop.hh-medic.com/repository/maven-public'
+        }
     }
 }
 
