@@ -31,5 +31,4 @@ dependencies {
     implementation 'com.android.support:cardview-v7:27.1.1'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
-    implementation 'com.hhmedic.android.sdk:liberate:2.4.4.111917'
 }
